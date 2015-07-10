@@ -86,6 +86,20 @@ module.exports = function(grunt) {
       target1: ['newer:concat:css', 'newer:concat:js', 'newer:cdnify'],
       target2: ['newer:includereplace'],
       target3: ['newer:htmlmin:dist', 'newer:cssmin:add_banner', 'newer:uglify']
+    },
+
+    // create auto-commits
+    gitcommit: {
+      your_target: {
+        options: {
+          'message': '[build] [auto-commit] [grunt]\n\nSigned-off-by: Siddharth Kannan <kannan.siddharth12@gmail.com>',
+          'verbose': true
+        },
+        files: [{
+          expand: true,
+          src: ['combined.min.css', 'combined.min.js', 'index.html']
+        }]
+      }
     }
   });
 
