@@ -1,0 +1,58 @@
+<html>
+
+<head>
+
+  <title>Siddharth Kannan</title>
+
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+  <div id="links">
+    <a href="https://github.com/icyflame">
+      @icyflame on GitHub
+    </a> <br>
+    <a href="https://npmjs.com/~icyflame">
+      @icyflame on NPM
+    </a> <br>
+    <a href="https://twitter.com/_icyflame">
+      @_icyflame on Twitter
+    </a> <br>
+    <a href="https://in.linkedin.com/in/kannansiddharth">
+      Find me on LinkedIn
+    </a>
+  </div>
+
+  <div class="element">
+    <img id="avatar-image" src=""> <br>
+    Hi, I am Siddharth Kannan <br>
+    <div class="component"></div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/typed.min.js"></script>
+  <script src="js/load_avatar.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".component").typed({
+        strings: ["Web Developer", "Ruby on Rails lover", "Node.js enthusiast", "Avid Michael Crichton fan", "Speedcuber", "Pianist", "Senior undergrad at<br>IIT Kharagpur."],
+        contentType: 'html', // or 'text',
+        // typing speed
+        typeSpeed: 30,
+        // time before typing starts
+        startDelay: 0,
+        // backspacing speed
+        backSpeed: 30,
+        // time before backspacing
+        backDelay: 1000,
+      });
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "test-typedjs",
+  "version": "0.0.0",
+  "authors": [
+    "Siddharth Kannan <kannan.siddharth12@gmail.com>"
+  ],
+  "description": "Test the typedJS Plugin",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "typed.js": "*",
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5"
+  }
+}
